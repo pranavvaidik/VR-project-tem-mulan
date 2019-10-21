@@ -27,7 +27,7 @@ public class camera_movement : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             x_rotation = transform.localRotation.eulerAngles.x;// + camera_speed * Time.deltaTime;
-            y_rotation = transform.localRotation.eulerAngles.y + camera_speed * Time.deltaTime;// + Time.deltaTime;
+            y_rotation = transform.localRotation.eulerAngles.y + 2*camera_speed * Time.deltaTime;// + Time.deltaTime;
             z_rotation = transform.localRotation.eulerAngles.z;// + Time.deltaTime;
             transform.rotation = Quaternion.Euler(x_rotation, y_rotation, z_rotation);
         }
@@ -44,7 +44,7 @@ public class camera_movement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             x_rotation = transform.localRotation.eulerAngles.x;// + camera_speed * Time.deltaTime;
-            y_rotation = transform.localRotation.eulerAngles.y - camera_speed * Time.deltaTime;// + Time.deltaTime;
+            y_rotation = transform.localRotation.eulerAngles.y - 2*camera_speed * Time.deltaTime;// + Time.deltaTime;
             z_rotation = transform.localRotation.eulerAngles.z;// + Time.deltaTime;
             transform.rotation = Quaternion.Euler(x_rotation, y_rotation, z_rotation);
         }
