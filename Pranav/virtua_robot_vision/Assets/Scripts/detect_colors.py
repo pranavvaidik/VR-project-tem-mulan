@@ -30,7 +30,7 @@ env = UnityEnvironment(file_name=env_name)
 
 print("it works till here!")
 # Set the default brain to work with
-default_brain = env.brain_names[1]
+default_brain = env.brain_names[0]
 print(default_brain)
 brain = env.brains[default_brain]
 
