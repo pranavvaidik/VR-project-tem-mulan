@@ -29,10 +29,11 @@ def circ_list_condense(circ_list):
 	return final_circ_list
 
 # Load picture and detect edges
-image =  cv2.imread("test_images\screen_400x400_2019-10-27_02-22-25.png") #img_as_ubyte(data.coins()[160:230, 70:270])
-img = cv2.cvtColor(image,cv2.COLOR_RGB2BGR)
-image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
-edges = canny(image, sigma=3, low_threshold=10, high_threshold=50)
+image =  cv2.imread("example_37.jpg") #img_as_ubyte(data.coins()[160:230, 70:270])
+
+img = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
+gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+edges = canny(gray, sigma=3, low_threshold=10, high_threshold=50)
 
 
 # Detect two radii
@@ -43,6 +44,9 @@ hough_res = hough_circle(edges, hough_radii)
 accums, cx, cy, radii = hough_circle_peaks(hough_res, hough_radii,
                                            total_num_peaks=8)
 
+
+
+print(accums, cx, cy, radii)
 
 circ_list = [(cy[i],cx[i],radii[i]) for i in range(len(cx))]
 

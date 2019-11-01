@@ -110,13 +110,15 @@ p=0
 gray_old = None
 
 obj_locs = None
+textAction = dict()
 while True:
 
 	if obj_locs is None:
 		env_info = env.step()[default_brain]
 	else:
 		for circ in obj_locs:
-			env_info = env.step(circ)[default_brain]
+			textAction['vision_brain'] = "Button"
+			env_info = env.step(circ, text_action = textAction)[default_brain]
 		
 	print("number of visual observations:",len(env_info.visual_observations))
 	
