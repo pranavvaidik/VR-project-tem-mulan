@@ -112,6 +112,7 @@
     <Compile Include="Assets\MyActionScript.cs" />
     <Compile Include="Assets\Race.cs" />
     <Compile Include="Assets\RigidbodyPusher.cs" />
+    <Compile Include="Assets\RobotManController.cs" />
     <Compile Include="Assets\SavWav.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[001 - Interactions] ControllerEvents\Scripts\VRTKExample_ControllerEventsDelegateListeners.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[002 - Pointers] StraightPointer\Scripts\VRTKExample_PointerObjectHighlighterActivator.cs" />
