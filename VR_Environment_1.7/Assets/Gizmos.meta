@@ -1,14 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:VR_Environment_1.7/Assets/Room_1/NavMesh.asset.meta
-guid: 1d97b240fa9d8d447a9649602e26fcf1
-NativeFormatImporter:
-=======
-guid: 176d9f9ee79007f44877d92d9094c52a
+guid: a3a3b926e5617a84abfccf4f10a3b5f3
 folderAsset: yes
 DefaultImporter:
->>>>>>> cc1b5c04d58e780782fc9034b27a5f787c8322d7:VR_Environment_1.7/Assets/Gizmos.meta
   externalObjects: {}
-  mainObjectFileID: 23800000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
