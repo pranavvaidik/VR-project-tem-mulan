@@ -82,6 +82,43 @@ public class vision_agent : Agent
         centerX = vectorAction[1];
         radius = vectorAction[2];
 
+        string color;
+
+        if (textAction.Equals("Y"))
+        {
+            color = "Yellow";
+        }
+        else if (textAction.Equals("O"))
+        {
+            color = "Orange";
+        }
+        else if (textAction.Equals("B"))
+        {
+            color = "Blue";
+        }
+        else if(textAction.Equals("G"))
+        {
+            color = "Green";
+        }
+        else if(textAction.Equals("R"))
+        {
+            color = "Red";
+        }
+        else if(textAction.Equals("P"))
+        {
+            color = "Purple";
+        }
+        else
+        {
+            color = "Unassigned";
+        }
+
+
+
+
+
+
+
         Debug.Log("Pixel width :" + camera.pixelWidth + " Pixel height : " + camera.pixelHeight);
         Debug.Log("Vector action is: " + vectorAction[0].ToString());
 
@@ -123,7 +160,7 @@ public class vision_agent : Agent
                 {
                     test = "Button";
                     test = test + textAction;
-                    text_Action = textAction;
+                    text_Action = color;
 
                     
 
@@ -137,10 +174,10 @@ public class vision_agent : Agent
                         Debug.LogFormat("Both are different. Bigger issue" + test);
                     }
 
-                    Debug.LogFormat("current tag is: {0}", text_Action);
+                    Debug.LogFormat("current tag is: {0}, while text action is {1}", text_Action, textAction);
 
                     
-                    target.tag = textAction;
+                    target.tag = color;
                 }
             }
             
