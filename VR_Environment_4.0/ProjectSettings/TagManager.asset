@@ -28,6 +28,12 @@ TagManager:
   - iWall
   - projectile
   - pit
+  - Blue
+  - Green
+  - Red
+  - Purple
+  - Yellow
+  - Orange
   layers:
   - Default
   - TransparentFX
