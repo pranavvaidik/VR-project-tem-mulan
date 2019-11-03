@@ -13,10 +13,10 @@
 		_RimColor ("Rim Color", Color) = (1,1,1,1)
 		_RimPower ("Rim Power", Range(0.1, 10)) = 5.0
 		// Scanline
-		_ScanTiling ("Scan Tiling", Range(0.01, 10.0)) = 0.05
+		_ScanTiling ("Scan Tiling", Range(0.01, 5000.0)) = 0.05
 		_ScanSpeed ("Scan Speed", Range(-2.0, 2.0)) = 1.0
 		// Glow
-		_GlowTiling ("Glow Tiling", Range(0.01, 1.0)) = 0.05
+		_GlowTiling ("Glow Tiling", Range(0.01, 100.0)) = 0.05
 		_GlowSpeed ("Glow Speed", Range(-10.0, 10.0)) = 1.0
 		// Glitch
 		_GlitchSpeed ("Glitch Speed", Range(0, 50)) = 1.0

@@ -23,7 +23,9 @@ public class WatsonKeywordExtractor : MonoBehaviour
     [SerializeField]
     private string _serviceUrl;
     [Tooltip("Text field to display the results of streaming.")]
-    public Text ResultsField;
+    public TextMesh ResultsField;
+    [Tooltip("Text object where the parsed command will be held.")]
+    public TextMesh CommandField;
     [Header("IAM Authentication")]
     [Tooltip("The IAM apikey.")]
     [SerializeField]
@@ -47,7 +49,8 @@ public class WatsonKeywordExtractor : MonoBehaviour
 
     public SteamVR_Action_Boolean RetroMicOnOff; //A reference to the action
     public SteamVR_Input_Sources handType; //A reference to the hand
-    public GameObject RetroMic; //Reference to the RetroMic
+    public GameObject RetroMic; //Reference to the the retro mic model
+    public GameObject HologramEmitter; //Reference to the the holographic emitter, audio, and particles
     private bool micConnected = false; //A boolean that flags whether there's a connected microphone
     private int minFreq; //The maximum and minimum available recording frequencies
     private int maxFreq;
@@ -225,7 +228,67 @@ public class WatsonKeywordExtractor : MonoBehaviour
                     //string text = string.Format("{0} ({1}, {2:0.00})\n", alt.transcript, res.final ? "Final" : "Interim", alt.confidence);
                     string text = string.Format("{0}\n", alt.transcript);
                     Log.Debug("ExampleStreaming.OnRecognize()", text);
-                    ResultsField.text = text;
+
+                    //search text
+                    string colored_text = "";
+                    string command_text = "";
+                    foreach (string word in text.Split(' '))
+                    {
+                        if (word == "press")
+                        {
+                            colored_text += "<color=green><b>press</b></color> ";
+                            command_text += "press ";
+                        }
+                        else if (word == "blue")
+                        {
+                            colored_text += "<color=green><b>blue</b></color> ";
+                            command_text += "blue ";
+                        }
+                        else if (word == "red")
+                        {
+                            colored_text += "<color=green><b>red</b></color> ";
+                            command_text += "red ";
+                        }
+                        else if (word == "green")
+                        {
+                            colored_text += "<color=green><b>green</b></color> ";
+                            command_text += "green ";
+                        }
+                        else if (word == "yellow")
+                        {
+                            colored_text += "<color=green><b>yellow</b></color> ";
+                            command_text += "yellow ";
+                        }
+                        else if (word == "purple")
+                        {
+                            colored_text += "<color=green><b>purple</b></color> ";
+                            command_text += "purple ";
+                        }
+                        else if (word == "orange")
+                        {
+                            colored_text += "<color=green><b>orange</b></color> ";
+                            command_text += "orange ";
+                        }
+                        else if (word == "button")
+                        {
+                            colored_text += "<color=green><b>button</b></color> ";
+                            command_text += "button ";
+                        }
+                        else
+                        {
+                            colored_text += word + " ";
+                        }
+                    }
+
+                    // check if command is valid, else show problems
+
+                    ResultsField.text = colored_text; //show text
+
+                    Log.Debug("The command is: ", command_text); //load command array <----
+                    CommandField.GetComponent<TextMesh>().text = command_text; //set the command text
+
+                    //RetroMic.GetComponent<MeshRenderer>().enabled = true;
+                    //RetroMic.GetComponent<Text>().text = ""; //clear text field
                 }
 
                 if (res.keywords_result != null && res.keywords_result.keyword != null)
@@ -263,10 +326,10 @@ public class WatsonKeywordExtractor : MonoBehaviour
     public void TriggerUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
         Debug.Log("Trigger is up");
-        //RetroMic.GetComponent<MeshRenderer>().enabled = false;
-        RetroMic.GetComponent<Text>().text = "";
-        //RetroMic.GetComponent<Text>.Clear();
-        //make text invisible <---
+        ResultsField.text = ""; //clear text field
+        RetroMic.GetComponent<MeshRenderer>().enabled = false; //make holographic mic invisible
+        HologramEmitter.GetComponent<AudioSource>().volume = 0; //turn off sound
+        HologramEmitter.GetComponent<ParticleSystemRenderer>().enabled = false; //turn off sound
 
         Debug.Log("Still connected to mic?");
         if (micConnected) //If there is a microphone
@@ -283,10 +346,9 @@ public class WatsonKeywordExtractor : MonoBehaviour
     public void TriggerDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
         Debug.Log("Trigger is down");
-        //RetroMic.GetComponent<MeshRenderer>().enabled = true;
-        //RetroMic.GetComponent<Text>.Clear();
-        //make text visible <---
-
+        RetroMic.GetComponent<MeshRenderer>().enabled = true; //make holographic mic visible
+        HologramEmitter.GetComponent<AudioSource>().volume = 1; //turn sound on
+        HologramEmitter.GetComponent<ParticleSystemRenderer>().enabled = true; //turn off sound
         Debug.Log("Attempting to connect to mic");
         if (micConnected) //If there is a microphone
         {
