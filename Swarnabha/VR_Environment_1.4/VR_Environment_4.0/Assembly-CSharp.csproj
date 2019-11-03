@@ -60,12 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ColorCylinder.cs" />
     <Compile Include="Assets\HoverPoser.cs" />
     <Compile Include="Assets\Huge Mocap Library\demo\scripts\demo.cs" />
     <Compile Include="Assets\Huge Mocap Library\demo\scripts\smoothFollow.cs" />
     <Compile Include="Assets\InputCanvasManager.cs" />
-    <Compile Include="Assets\MovementController.cs" />
     <Compile Include="Assets\Race.cs" />
     <Compile Include="Assets\RigidbodyPusher.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\SceneResources\[001 - Interactions] ControllerEvents\Scripts\VRTKExample_ControllerEventsDelegateListeners.cs" />
@@ -410,6 +408,8 @@
     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseDefines.cs" />
     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseHeadset.cs" />
     <Compile Include="Assets\VRTK\Source\SDK\Ximmerse\SDK_XimmerseSystem.cs" />
+    <Compile Include="Assets\ybot\ColorCylinder.cs" />
+    <Compile Include="Assets\ybot\MovementController.cs" />
     <None Include="Assets\Huge Mocap Library\READTHIS.txt" />
     <None Include="Assets\VRTK\Documentation.txt" />
     <None Include="Assets\Huge Mocap Library\mocap animations\cmu-mocap-index-text.txt" />
