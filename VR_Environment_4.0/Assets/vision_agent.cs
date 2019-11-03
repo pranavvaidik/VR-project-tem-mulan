@@ -12,17 +12,10 @@ public class vision_agent : Agent
     public float z_rotation = 0.0f;
     public float camera_speed = 10;
 
-    public int resWidth = 0;
-    public int resHeight = 0;
+    public int resWidth = 400;
+    public int resHeight = 400;
 
     public bool takePicture = false;
-
-    public float centerX;
-    public float centerY;
-    public float radius;
-
-
-    public string text_Action = "Not yet assigned";
 
     //public new Camera camera;//= //GetComponent<Camera>;
 
@@ -66,9 +59,6 @@ public class vision_agent : Agent
     {
         camera = GetComponent<Camera>();
 
-        resWidth = camera.pixelWidth;
-        resHeight = camera.pixelHeight;
-
         Vector3 rotation = transform.localRotation.eulerAngles;
         float xRot = rotation.x;
         float yRot = rotation.y;
@@ -77,110 +67,36 @@ public class vision_agent : Agent
 
     public override void AgentAction(float[] vectorAction, string textAction)
     {
-        //float centerY = camera.pixelHeight - vectorAction[0];
-        centerY = camera.pixelHeight - vectorAction[0];
-        centerX = vectorAction[1];
-        radius = vectorAction[2];
+        float centerY = camera.pixelHeight - vectorAction[0];
+        float centerX = vectorAction[1];
+        float radius = vectorAction[3];
 
-        string color;
-
-        if (textAction.Equals("Y"))
-        {
-            color = "Yellow";
-        }
-        else if (textAction.Equals("O"))
-        {
-            color = "Orange";
-        }
-        else if (textAction.Equals("B"))
-        {
-            color = "Blue";
-        }
-        else if(textAction.Equals("G"))
-        {
-            color = "Green";
-        }
-        else if(textAction.Equals("R"))
-        {
-            color = "Red";
-        }
-        else if(textAction.Equals("P"))
-        {
-            color = "Purple";
-        }
-        else
-        {
-            color = "Unassigned";
-        }
-
-
-
-
-
-
-
-        Debug.Log("Pixel width :" + camera.pixelWidth + " Pixel height : " + camera.pixelHeight);
-        Debug.Log("Vector action is: " + vectorAction[0].ToString());
-
-        Debug.Log(textAction);
+        Debug.Log("AgentAction is called. Atleast you don't have to worry about this");
 
         Vector3 objCenter = new Vector3(centerX, centerY, 0);
         //RaycastHit hit;
 
         Ray ray = camera.ScreenPointToRay(objCenter);
 
-        string test;
-
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
             Transform target = hit.transform;
 
-            
-
-            //Rigidbody rb = hit.rigidbody;
-            //GameObject gameObjectHit = rb.gameObject;
+            Rigidbody rb = hit.rigidbody;
+            GameObject gameObjectHit = rb.gameObject;
             Vector3 objLoc = camera.WorldToScreenPoint(target.position);
 
             //float screenDist = Vector3.Distance(objLoc, objCenter);
 
-            Debug.Log("Raycast hit the object with name: " +target.name);
-
-
-            //target.tag = "Button";
-      
-            
-            
             if (Vector3.Distance(objLoc, objCenter) < radius)
             {
                 Debug.Log("an object is found, " + target.position);
 
-
-
-                if (target.CompareTag("Untagged"))
+                if (gameObjectHit.CompareTag("Untagged"))
                 {
-                    test = "Button";
-                    test = test + textAction;
-                    text_Action = color;
-
-                    
-
-                    if (string.Equals(test,textAction))
-                    {
-                        Debug.LogFormat("both are same, then what is the issue?");
-                    }
-                    else
-                    {
-                        //Debug.
-                        Debug.LogFormat("Both are different. Bigger issue" + test);
-                    }
-
-                    Debug.LogFormat("current tag is: {0}, while text action is {1}", text_Action, textAction);
-
-                    
-                    target.tag = color;
+                    gameObjectHit.tag = textAction;
                 }
             }
-            
         }
 
 
