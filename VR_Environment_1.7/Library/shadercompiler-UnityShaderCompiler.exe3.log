@@ -1,9 +1,7 @@
-Base path: C:/Program Files/Unity/Hub/Editor/2018.4.9f1/Editor/Data
+Base path: C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data
 Cmd: initializeCompiler
-Cmd: disassembleShader
-  api=4 insize=1418 outsize=2437 ok=1
-Cmd: initializeCompiler
-Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=3273 outsize=2253 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -19,33 +17,41 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=12733 outsize=1053 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=12733 outsize=2961 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=65748 outsize=12505 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=4631 outsize=1857 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=24259 outsize=9529 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=28420 outsize=2029 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=28420 outsize=1377 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=28420 outsize=1305 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=28420 outsize=1857 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=28420 outsize=1337 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=28420 outsize=2497 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=953 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=753 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=1297 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=1437 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=1333 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=1241 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Unhandled exception: Protocol error - unexpected end of data (did the Editor crash?)
-
-Quitting shader compiler process

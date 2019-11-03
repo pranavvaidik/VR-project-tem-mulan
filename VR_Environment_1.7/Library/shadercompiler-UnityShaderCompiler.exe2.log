@@ -1,9 +1,7 @@
-Base path: C:/Program Files/Unity/Hub/Editor/2018.4.9f1/Editor/Data
+Base path: C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data
 Cmd: initializeCompiler
-Cmd: disassembleShader
-  api=4 insize=1206 outsize=2273 ok=1
-Cmd: initializeCompiler
-Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=3273 outsize=593 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -19,33 +17,27 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=4 insize=12733 outsize=1133 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=12733 outsize=1801 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=24259 outsize=12157 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=28420 outsize=2077 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=28420 outsize=3017 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=857 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=797 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=1317 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=1301 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=21203 outsize=1357 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Unhandled exception: Protocol error - unexpected end of data (did the Editor crash?)
-
-Quitting shader compiler process

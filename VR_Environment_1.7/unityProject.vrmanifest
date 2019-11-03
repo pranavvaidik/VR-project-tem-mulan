@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.vivetutorial.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\andyj\\team-mulan\\VR_Environment_1.7\\actions.json",
+      "action_manifest_path": "C:\\Users\\siva558\\Desktop\\team-mulan\\VR_Environment_1.7\\actions.json",
       "strings": {
         "en_us": {
           "name": "Vive Tutorial [Testing]"
