@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 354
     height: 452
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -70,10 +70,10 @@ MonoBehaviour:
     y: 0
     width: 1259
     height: 452
-  m_MinSize: {x: 402, y: 224}
-  m_MaxSize: {x: 8002, y: 4024}
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 137
+  controlID: 113
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,10 +95,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 679, y: 498}
+  m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 135
+  controlID: 111
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,10 +241,10 @@ MonoBehaviour:
     y: 0
     width: 1259
     height: 731
-  m_MinSize: {x: 402, y: 498}
+  m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 136
+  controlID: 112
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -264,8 +264,8 @@ MonoBehaviour:
     y: 0
     width: 905
     height: 452
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -390,7 +390,7 @@ MonoBehaviour:
     height: 259
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: color
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -400,20 +400,21 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 96
-  m_LastProjectPath: C:\Users\Swarnabha\Downloads\After IIT\TAMU\Sem1\VR\VR_Environment_1.4\VR_Environment_4.0
+  m_LastProjectPath: C:\Users\Swarnabha\Documents\GitHub\team-mulan\Swarnabha\VR_Environment_1.4\VR_Environment_4.0
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 194}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cc0f0000d20f000046140000aa14000008160000e4190000261d0000b4200000e020000096220000a2260000c6280000f2290000322a0000cc2d0000283000005e31000084310000a8310000245900002659000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: d00f0000
+    m_LastClickedID: 4048
+    m_ExpandedIDs: 00000000d00f0000d60f00004a140000ae1400000e160000f0190000321d0000c0200000ec200000a2220000ae260000d2280000fe2900003e2a0000d82d000040300000763100009c310000c0310000505900005259000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -441,7 +442,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000cc0f0000d20f000046140000aa14000008160000e4190000261d0000b4200000e020000096220000a2260000c6280000f2290000322a0000cc2d0000283000005e31000084310000a83100002459000026590000
+    m_ExpandedIDs: 00000000d00f0000d60f00004a140000ae1400000e160000f0190000321d0000c0200000ec200000a2220000ae260000d2280000fe2900003e2a0000d82d000040300000763100009c310000c03100005059000052590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -559,10 +560,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ac79ffff
-      m_LastClickedID: -34388
-      m_ExpandedIDs: 66faffff78faffffc8faffffd8faffffe8fafffff8faffff0cfbffffd0fbffff28360000
+      scrollPos: {x: 0, y: 60}
+      m_SelectedIDs: a8f5ffff
+      m_LastClickedID: -2648
+      m_ExpandedIDs: acf5ffffb0f5ffffc4f5ffffcaf5ffffd0f5ffffd4f5ffff30f6ffff44f6ffff56f6ffff6af6ffffd0fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -618,9 +619,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -15.551357, y: 1.356909, z: -0.27008516}
+    m_Target: {x: -15.578167, y: 1.3845901, z: -0.34248048}
     speed: 2
-    m_Value: {x: -15.551357, y: 1.356909, z: -0.27008516}
+    m_Value: {x: -15.578167, y: 1.3845901, z: -0.34248048}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -640,21 +641,21 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
+      m_Target: 1
       speed: 2
-      m_Value: 0
+      m_Value: 1
     zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.00017307683, y: 0.9998088, z: -0.010498523, w: 0.016498253}
+    m_Target: {x: -0.07441362, y: 0.92193466, z: -0.22268368, w: -0.30807954}
     speed: 2
-    m_Value: {x: 0.00017307683, y: 0.9998088, z: -0.010498523, w: 0.016498253}
+    m_Value: {x: -0.074413545, y: 0.92193377, z: -0.22268347, w: -0.30807924}
   m_Size:
-    m_Target: 0.773426
+    m_Target: 1.5661687
     speed: 2
-    m_Value: 0.773426
+    m_Value: 1.5661687
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -702,10 +703,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -502.80002
-    m_HBaseRangeMax: 502.80002
-    m_VBaseRangeMin: -96.8
-    m_VBaseRangeMax: 96.8
+    m_HBaseRangeMin: -628.5
+    m_HBaseRangeMax: 628.5
+    m_VBaseRangeMin: -121
+    m_VBaseRangeMax: 121
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -741,7 +742,7 @@ MonoBehaviour:
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 1
-  m_LastWindowPixelSize: {x: 1571.25, y: 323.75}
+  m_LastWindowPixelSize: {x: 1257, y: 259}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
