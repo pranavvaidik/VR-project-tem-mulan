@@ -219,12 +219,18 @@
     <Compile Include="Assets\ML-Agents\Scripts\UnityAgentsException.cs" />
     <Compile Include="Assets\ML-Agents\Scripts\Utilities.cs" />
     <Compile Include="Assets\MyActionScript.cs" />
+    <Compile Include="Assets\NavigationAnimation\Assets\Scripts\ClickToMove.cs" />
+    <Compile Include="Assets\NavigationAnimation\Assets\Scripts\LocomotionSimpleAgent.cs" />
+    <Compile Include="Assets\NavigationAnimation\Assets\Scripts\LookAt.cs" />
     <Compile Include="Assets\Race.cs" />
     <Compile Include="Assets\RobotManController.cs" />
     <Compile Include="Assets\SavWav.cs" />
     <Compile Include="Assets\scripts\robot_academy.cs" />
+    <Compile Include="Assets\scripts\vision_agent.cs" />
     <Compile Include="Assets\Teleportation Pad\CustomTeleporter.cs" />
     <Compile Include="Assets\WatsonKeywordExtractor.cs" />
+    <Compile Include="Assets\ybot\ColorCylinder.cs" />
+    <Compile Include="Assets\ybot\MovementController.cs" />
     <None Include="Assets\HologramShader-master\HologramShader-master\Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Experimental.compute" />
     <None Include="Assets\HologramShader-master\HologramShader-master\ProjectSettings\ProjectVersion.txt" />
@@ -238,6 +244,7 @@
     <None Include="Assets\HologramShader-master\HologramShader-master\Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\HologramShader-master\HologramShader-master\Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\Random.cginc" />
+    <None Include="Assets\NavigationAnimation\ProjectSettings\ProjectVersion.txt" />
     <None Include="Assets\ML-Agents\Examples\SharedAssets\Materials\ShaderRadialGrid.shader" />
     <None Include="Assets\HologramShader-master\HologramShader-master\Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
     <None Include="Assets\ML-Agents\Plugins\Barracuda.Core\Barracuda\Resources\BarracudaReferenceImpl.compute" />
@@ -507,6 +514,24 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="System.IO.Abstractions">
+      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/System.IO.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Abstractions.TestingHelpers">
+      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Barracuda">
+      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/Barracuda.Core/Barracuda/Barracuda.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Grpc.Core">
+      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Interactive.Async">
+      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+    </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
       <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -524,24 +549,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.Protobuf">
-      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Abstractions.TestingHelpers">
-      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="Barracuda">
-      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/Barracuda.Core/Barracuda/Barracuda.dll</HintPath>
-    </Reference>
-    <Reference Include="System.IO.Abstractions">
-      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/System.IO.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Interactive.Async">
-      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
-    </Reference>
-    <Reference Include="Grpc.Core">
-      <HintPath>C:/Users/siva558/Desktop/team-mulan/VR_Environment_1.7/Assets/ML-Agents/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -903,6 +910,18 @@
       <Project>{6D3B8237-CC10-633F-5A29-A36F64F2BEC0}</Project>
       <Name>SteamVR_Actions</Name>
     </ProjectReference>
+    <ProjectReference Include="MacBLAS.csproj">
+      <Project>{389F04DA-16C9-B4D1-2D7B-C7E5E959C505}</Project>
+      <Name>MacBLAS</Name>
+    </ProjectReference>
+    <ProjectReference Include="Barracuda-editor.csproj">
+      <Project>{CEF5EDBA-8FA3-1285-E4FA-BD24C5EAB305}</Project>
+      <Name>Barracuda-editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="iOSBLAS.csproj">
+      <Project>{67FBD09E-9215-71AE-480F-2EEF9D243076}</Project>
+      <Name>iOSBLAS</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
       <Project>{9EC9B096-3EDB-4017-8F5E-93FC87E2058C}</Project>
       <Name>SteamVR_Input_Editor</Name>
@@ -926,18 +945,6 @@
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{9CF842BF-8B54-339F-2592-FF027692B4FC}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="MacBLAS.csproj">
-      <Project>{389F04DA-16C9-B4D1-2D7B-C7E5E959C505}</Project>
-      <Name>MacBLAS</Name>
-    </ProjectReference>
-    <ProjectReference Include="Barracuda-editor.csproj">
-      <Project>{CEF5EDBA-8FA3-1285-E4FA-BD24C5EAB305}</Project>
-      <Name>Barracuda-editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="iOSBLAS.csproj">
-      <Project>{67FBD09E-9215-71AE-480F-2EEF9D243076}</Project>
-      <Name>iOSBLAS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
