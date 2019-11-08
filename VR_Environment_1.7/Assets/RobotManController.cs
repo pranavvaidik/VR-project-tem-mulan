@@ -10,11 +10,12 @@ public class RobotManController : MonoBehaviour
     [SerializeField]
     Transform _destination;
 
+    public GameObject[] GameButtons;
+
     NavMeshAgent _navMeshAgent;
 
     Animator anim;
-    Vector2 smoothDeltaPosition = Vector2.zero;
-    Vector2 velocity = Vector2.zero;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,17 @@ public class RobotManController : MonoBehaviour
             Vector3 targetVector = _destination.transform.position;
             _navMeshAgent.SetDestination(targetVector);
             //_navMeshAgent.velocity(0,0,2);
+        }
+
+        GameButtons = GameObject.FindGameObjectsWithTag("green");
+        if (GameButtons != null)
+        {
+            foreach (GameObject GameButton in GameButtons)
+            {
+                Vector3 targetVector = GameButton.transform.position;
+                _navMeshAgent.SetDestination(targetVector);
+                anim.SetBool("isWalking", true);
+            }
         }
     }
 }

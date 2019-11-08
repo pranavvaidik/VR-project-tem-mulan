@@ -2138,6 +2138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _destination: {fileID: 692387827}
+  GameButtons: []
 --- !u!114 &381635560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4047,6 +4048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: button_1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f5f9438bfb7d064478b488d7163a333f, type: 3}
+      propertyPath: m_TagString
+      value: green
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: f5f9438bfb7d064478b488d7163a333f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5547,6 +5552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _destination: {fileID: 0}
+  GameButtons: []
 --- !u!20 &1159231496 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 931962649382452641, guid: 2393fd7e6c0a5224bb1187faf2b06b0e,
@@ -5933,6 +5939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _destination: {fileID: 692387827}
+  GameButtons: []
 --- !u!114 &1234855707
 MonoBehaviour:
   m_ObjectHideFlags: 0
