@@ -20,8 +20,13 @@ Repository for Collaboration with Virtual Agents using NLP and CV in VR
 * [Steam VR Plug-in](https://steamcommunity.com/app/250820/discussions/7/2605804632880587168/)
 
 ### Instructions
-1) Clone this project repository, checkout the master branch, and open the project with Unity 2018.4.11 LTS
-2) To install and use ML Agents, install Python with additional dependencies
+1) Clone this project repository, checkout the master branch, and open the project with Unity 2018.4.11 LTS.
+2) To install and use ML Agents, install Python with additional dependencies.
+    
+```sh
+    pip3 install mlagents==0,10
+```
+
 3) Navigate to the project folder through Unity Hub and open the project.
 4) Run the Open CV Python script. It will start runnning in background and will prompt you to play the scene.
 5) Click play scene
