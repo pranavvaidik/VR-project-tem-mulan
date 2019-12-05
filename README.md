@@ -20,13 +20,16 @@ Repository for Collaboration with Virtual Agents using NLP and CV in VR
 
 ### Instructions
 1) Clone this project repository, checkout the master branch, and open the project with Unity 2018.4.11 LTS
-1) To install and use ML Agents, install Python with additional dependencies
+2) To install and use ML Agents, install Python with additional dependencies
 3) Navigate to the project folder through Unity Hub and open the project.
-3) Run the Open CV Python script. It will start runnning in background and will prompt you to play the scene.
-4) It will pron
-2) Open the scene named, "Iceland test"
-3) Click play scene
-4) Refer to user control bindings described below
-5) Alternatively, you can navigate to this repository's releases tab to download a zip file containing the application executable
+4) Run the Open CV Python script. It will start runnning in background and will prompt you to play the scene.
+5) Click play scene
+6) Refer to user control bindings described below
+7) Alternatively, you can navigate to this repository's releases tab to download a zip file containing the application executable
 
 ### Controls
+Action | Controller Binding
+------------ | -------------
+Activate Watson for Speech recognition | Left Hand Trigger press
+Navigation through pointing | Right hand Touchpad press
+Ray Casting | Right Hand Trigger Press
