@@ -17,6 +17,7 @@ Repository for Collaboration with Virtual Agents using NLP and CV in VR
 * Python 3.xx
 * Watson API
 * Open CV
+* [Steam VR Plug-in](https://steamcommunity.com/app/250820/discussions/7/2605804632880587168/)
 
 ### Instructions
 1) Clone this project repository, checkout the master branch, and open the project with Unity 2018.4.11 LTS
