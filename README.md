@@ -31,7 +31,7 @@ Repository for Collaboration with Virtual Agents using NLP and CV in VR
 3) Navigate to the project folder through Unity Hub and open the project.
 4) Open Command Prompt and navigate to the Project Scripts folder using the following command:
 ```sh
-    cd Assets\Scripts
+    cd Assets/Scripts
 ```
 4) Run the ```detect_colors.py``` script using the command.
 ```sh
