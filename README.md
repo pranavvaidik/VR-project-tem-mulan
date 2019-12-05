@@ -16,7 +16,7 @@ Repository for Collaboration with Virtual Agents using NLP and CV in VR
 * Anaconda 3 or above
 * Python 3.xx
 * Watson API
-* Open CV
+* OpenCV 3
 * [Steam VR Plug-in](https://steamcommunity.com/app/250820/discussions/7/2605804632880587168/)
 
 ### Instructions
