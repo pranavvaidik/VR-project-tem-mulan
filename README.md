@@ -47,3 +47,6 @@ Action | Controller Binding
 Activate Watson for Speech recognition | Left Hand Trigger press
 Navigation through pointing | Right hand Touchpad press
 Ray Casting | Right Hand Trigger Press
+
+### Project Video
+[![Project Video](https://github.tamu.edu/VIST-477-VIZA-677-CSCE-446-CSCE-650/team-mulan/blob/master/Swarnabha/MULAN.png?raw=true)](https://drive.google.com/file/d/1hC-oJd6HDmf6Ho6iFczW3uwS-PGSuFrH/view?usp=sharing)
