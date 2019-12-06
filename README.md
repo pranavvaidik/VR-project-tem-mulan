@@ -9,7 +9,7 @@ Repository for Collaboration with Virtual Agents using NLP and CV in VR
 
 ### Tools to install 
 * Unity Version 2018.4.11
-* SteamVR Plugin ver. 2.3.2
+* SteamVR Plugin version 2.3.2
 * HTC VIVE VR System/Valve Index
 * Unity ML Agents version 0.10
 * TensorFlow 1.7.1
