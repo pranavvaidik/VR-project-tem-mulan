@@ -65,4 +65,4 @@ There should be two cameras active in a project window: display 1 and display 7.
 7) Basic Metal Tecture Pack - open source textures
 
 ### Project Video
-[![Project Video](https://github.tamu.edu/VIST-477-VIZA-677-CSCE-446-CSCE-650/team-mulan/blob/master/Swarnabha/MULAN.png?raw=true)](https://drive.google.com/file/d/1hC-oJd6HDmf6Ho6iFczW3uwS-PGSuFrH/view?usp=sharing)
+[![Project Video](https://github.tamu.edu/VIST-477-VIZA-677-CSCE-446-CSCE-650/team-mulan/blob/master/MULAN.png?raw=true)](https://drive.google.com/file/d/1hC-oJd6HDmf6Ho6iFczW3uwS-PGSuFrH/view?usp=sharing)
