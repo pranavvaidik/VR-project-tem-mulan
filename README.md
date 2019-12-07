@@ -55,5 +55,14 @@ Ray Casting | Right Hand Trigger Hold
 ### Known Bugs
 There should be two cameras active in a project window: display 1 and display 7. At the start of each room, display 7 must be active (clicked upon / highlighted) for about 3 second until the robot's camera stops moving. Once the comera stops moving, make display 1 active. This must be done each time the user starts a new room.
 
+### Asset References
+1) Mixamo Y-Bot for Robot Animation - https://www.mixamo.com/#/?page=2&type=Character
+2) Portal Buttons - open source cad models
+3) Basement and Sewage Modular Kit - https://assetstore.unity.com/packages/3d/environments/urban/basement-and-sewerage-modular-location-121248
+4) Clipboard - https://assetstore.unity.com/packages/3d/props/clipboard-137662
+5) Tim's Assets - https://assetstore.unity.com/packages/3d/props/interior/tim-s-horror-assets-the-bloody-door-70847
+6) Teleportation Pad - open source cad model
+7) Basic Metal Tecture Pack - open source textures
+
 ### Project Video
 [![Project Video](https://github.tamu.edu/VIST-477-VIZA-677-CSCE-446-CSCE-650/team-mulan/blob/master/Swarnabha/MULAN.png?raw=true)](https://drive.google.com/file/d/1hC-oJd6HDmf6Ho6iFczW3uwS-PGSuFrH/view?usp=sharing)
